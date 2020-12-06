@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../css/application.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+  <header>
+    <div class="left-block">
+      <div class="brand">
+        <a href="../html/list-of-apps.html">Dynamics 365</a>
+      </div>
+
+      <div class="search-bar">
+        <img src="../img/search.svg" />
+        <input type="text" class="search-input" placeholder="Для поиска по номеру заявки начинайте с символа #">
+      </div>
+    </div>
+
+    <div class="user-actions">
+      <a href="./notifications.html" class="notification">
+        <img src="../img/bell.svg" id="svg-notification">
+      </a>
+
+      <a href="./logIn.html" class="logout">
+        <img src="../img/exit.svg" id="svg-logout">
+      </a>
+
+      <a href="./personal-page.html" class="user">
+        <span class="username">Имя Пользователя</span>
+        <img src="../img/user.svg" class="svg-user">
+      </a>
+    </div>
+  </header>
+
+  <div id="container">
+
+    <main>
+      <div class="sidebar">
+        <div class="title">
+          Заявки
+        </div>
+
+        <div>
+          <!-- <ul class="">
+            <a href="#">
+              <li><img src="../img/onАssessment1.svg" alt=""><span>123</span></li>
+            </a>
+            <a href="#">
+              <li><img src="../img/clock2.svg" alt=""><span>1234</span></li>
+            </a>
+          </ul> -->
+          <div class="status-nav">
+            <a class="status-links" href="../html/list-of-apps.html">
+              <div class="status status-is-rated-active">
+                <div class="status-img status-tick"></div>
+              </div>
+              <span class="status-text">На оценке</span>
+            </a>
+          </div>
+
+          <div class="status-nav">
+            <a class="status-links" href="../html/in-work.html">
+              <div class="status status-in-progress">
+                <div class="status-img status-clock"></div>
+              </div>
+              <span class="status-text">В работе</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="app">
+        <div class="path-container">
+          <span class="path"> 
+            <a href="./list-of-apps.html">Список заявок</a>
+            / Заявка #4
+          </span>
+          <span class="new">(новая)</span>
+        </div>
+
+        <div class="title">Разработка рекламного баннера для ООО “Название”</div>
+        <div class="date">31 октября, 14:14</div>
+
+        <ul class="terms">
+          <li>
+            <span class="item">Основная идея:</span>
+            <span class="term">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, neque.</span>
+          </li>
+          <li>
+            <span class="item">Вид работы:</span>
+            <span class="term">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, neque.</span>
+          </li>
+          <li>
+            <span class="item">Адрес:</span>
+            <span class="term">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, neque.</span>
+          </li>
+          <li>
+            <span class="item">Название компании:</span>
+            <span class="term">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, neque.</span>
+          </li>
+          <li>
+            <span class="item">Требования:</span>
+            <span class="term">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, neque.</span>
+          </li>
+          <li>
+            <span class="item">Желаемый срок:</span>
+            <span class="term">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, neque.</span>
+          </li>
+        </ul>
+
+        <div class="uploaded-files">
+          <button class="show-opened" onclick="this.className = (this.className == 'show' ? 'show-opened' : 'show')">
+            <span class="files">Загружено файлов: </span>
+            <span class="files-amount">2</span>
+            <img class="img-show" src="../img/show.svg" alt="" > 
+            <img class="img-hide" src="../img/hide.svg" alt="">
+          </button>
+          <div class="attached-files-opened">
+            <div class="attached-file">
+              <div class="img"><img src="../img/pin.svg"> </div>
+              <a class="download" type="download">Ссылка</a>
+            </div>
+            <input type="text" class="file-comment" placeholder="Нет коментария">
+            <div class="attached-file">
+              <div class="img"><img src="../img/pin.svg"> </div>
+              <a class="download" type="download">Ссылка</a>
+            </div>
+            <input type="text" class="file-comment" placeholder="Нет коментария">
+          </div>
+
+        </div>
+
+
+
+        <div class="comments">
+          <button class="show-opened" onclick="this.className = (this.className == 'show' ? 'show-opened' : 'show')">
+            <span class="title">Комментарии<span>
+            <img class="img-show-big" src="../img/show.svg" alt="">
+            <img class="img-hide-big" src="../img/hide.svg" alt="">
+          </button>
+
+          <div class="opened-comments">
+            <div class="ask">
+              <button class="submit" type="submit">
+                <img class="submit-img" src="../img/add.svg">
+              </button>
+              <span>Задать вопрос</span>
+            </div>
+
+            <div>
+              <div class="question">                    <!-- Коммент Исполнителя -->
+                <div class="user-and-date">
+                  <span class="you">ВЫ:</span>
+                  <span class="user">Испольнитель</span>
+                  <span class="date">31 октября, 14:14</span>
+                  <img src="../img/deadline.svg">
+                  <span class="deadline">Срок: 31 октября, 14:14</span>
+                </div>
+
+                <div class="comment">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolorem autem in sit sequi quia
+                  maiores
+                  dicta quas? Magni delectus ut accusamus repellendus. Voluptates similique repudiandae, minima ut
+                  expedita
+                  vero.
+                </div>
+
+                <div class="files-and-reply">
+                  <button class="show" onclick="this.className = (this.className == 'show' ? 'show-opened' : 'show')">
+                    <span class="files">Загружено файлов: </span>
+                    <span class="files-amount">1</span>
+                    <img class="img-show" src="../img/show.svg" alt="">
+                    <img class="img-hide" src="../img/hide.svg" alt="">
+                  </button>
+                  <div class="attached-files">
+                    <div class="attached-file">
+                      <div class="img"><img src="../img/pin.svg"> </div>
+                      <a class="download" type="download">Ссылка</a>
+                    </div>
+                    <input type="text" class="file-comment" placeholder="Нет коментария">
+                    <a href="#" class="reply">Ответить</a>
+                  </div>
+
+
+                  <div class="answer">                         <!--  Ответ заказчика -->
+                    <div class="user-and-date">
+                      <span class="user">Заказчик</span>
+                      <span>/</span>
+                      <span class="id">id: 1338</span>
+                      <span class="date">31 октября, 14:14</span>
+                      <img src="../img/deadline.svg">
+                      <span class="deadline">Срок: 31 октября, 14:14</span>
+                    </div>
+
+                    <div class="comment">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolorem autem in sit sequi
+                      quia
+                      maiores
+                      dicta quas? Magni delectus ut accusamus repellendus. Voluptates similique repudiandae, minima ut
+                      expedita
+                      vero.
+                    </div>
+
+                    <div class="files-and-reply">
+                      <button class="show-opened" onclick="this.className = (this.className == 'show' ? 'show-opened' : 'show')">
+                        <span class="files">Загружено файлов: </span>
+                        <span class="files-amount">1</span>
+                        <img class="img-show" src="../img/show.svg" alt="">
+                        <img class="img-hide" src="../img/hide.svg" alt="">
+                      </button>
+                      <div class="attached-files-opened">
+                        <div class="attached-file">
+                          <div class="img"><img src="../img/pin.svg"> </div>
+                          <a class="download" type="download">Ссылка</a>
+                        </div>
+                        <input type="text" class="file-comment" placeholder="Нет коментария">
+                        <a href="#" class="reply">Ответить</a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                    <div class="user-and-date">                   <!-- Комент Исполнителя -->
+                    <span class="you">ВЫ:</span>
+                    <span class="user">Исполнитель</span>
+                    <span class="date">31 октября, 14:14</span>
+                    <img src="../img/deadline.svg">
+                    <span class="deadline">Срок: 31 октября, 14:14</span>
+                  </div>
+
+                  <div class="comment">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolorem autem in sit sequi quia
+                    maiores
+                    dicta quas? Magni delectus ut accusamus repellendus. Voluptates similique repudiandae, minima ut
+                    expedita
+                    vero.
+                  </div>
+
+                  <div class="files-and-reply">
+                    <button class="show" onclick="this.className = (this.className == 'show' ? 'show-opened' : 'show')">
+                      <span class="files">Загружено файлов:</span>
+                      <span class="files-amount">1</span>
+                      <img class="img-show" src="../img/show.svg" alt="">
+                      <img class="img-hide" src="../img/hide.svg" alt="">
+                    </button>
+                    <div class="attached-files">
+                      <div class="attached-file">
+                        <div class="img"><img src="../img/pin.svg"> </div>
+                        <a class="download" type="download">Ссылка</a>
+                      </div>
+                      <input type="text" class="file-comment" placeholder="Нет коментария">
+                      <a href="#" class="reply">Ответить</a>
+                    </div>
+
+
+
+                    <div class="input">
+                      <textarea type="text" placeholder="Комментарий" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="upload-file">
+                      <label>
+                        <input type="file">
+                        <img src="../img/pin.svg">
+                        <span>Прикрепить файл</span>
+                      </label>
+                    </div>
+                    <span class="files">Загружено файлов:</span>
+                    <span class="files-amount">1</span>
+                    <div class="attached-file">
+                      <div class="img"><img src="../img/pin.svg"></div>
+                      <a class="download" type="download">Ссылка</a>
+                    </div>
+                    <div>
+                      <input class="file-comment" type="text" placeholder="Введите коментарий к файлу">
+                    </div>
+                  </div>
+                  <label>
+                    <input class="submit" type="submit">
+                    <div class="fake-submit">
+                      <div>Отправить</div>
+                    </div>
+                  </label>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="take-to-work">
+          <p class="take-to-work-title">Взять в работу?</p>
+          <div class="take-to-work-history">                  <!-- эта штука есть в 3 и 4 скринах -->
+            <p>Дата, Время, Срок, Цена</p>
+            <p>Дата, Время, Срок, Цена</p>
+            <p>Отклонено</p>              <!-- тут стилем задан last-child потемнее типо последняя актуальная инфа -->
+          </div>  
+          <div class="take-to-work-btns">
+
+            <button class="submit-take">Принять</button>
+            <div class="take-conf">
+              <div >
+                <button class="take-close"><img src="../img/delete.svg" alt=""></button>
+                <div class="take-title">Принять проект</div>
+                <div class="take-subtitle">Оцените стоимость и сроки</div>
+                <div class="take-price">
+                  <div class="take-span">Стоимость / Р</div>
+                  <input class="take-conf-input" type="text" placeholder="0">
+                </div>
+                <div class="take-period">
+                  <div class="take-span">Срок выполнения</div>
+                  <input class="take-conf-input" type="text" placeholder="0">
+                </div>
+                <div class="take-conf-buttons">
+                  <button class="take-accept">Принять</button>
+                  <button class="take-cancel">Отмена</button>
+                </div>
+              </div>
+            </div>
+
+            <button class="submit-change">Изменить</button>      <!-- Кнопка добавляется только на 3  -->
+            <div class="change-conf">
+              <div >
+                <button class="take-close"><img src="../img/delete.svg" alt=""></button>
+                <div class="take-title">Изменить стоимость и сроки</div>
+                <div class="take-price">
+                  <div class="take-span">Стоимость / Р</div>
+                  <input class="take-conf-input" type="text" placeholder="0">
+                </div>
+                <div class="take-period">
+                  <div class="take-span">Срок выполнения</div>
+                  <input class="take-conf-input" type="text" placeholder="0">
+                </div>
+                <div class="take-conf-buttons">
+                  <button class="take-accept">Принять</button>
+                  <button class="take-cancel">Отмена</button>
+                </div>
+              </div>
+            </div>
+
+            <button class="submit-reject">Отклонить</button>    
+            <div class="reject-conf"> 
+              <div >
+                <button class="take-close"><img src="../img/delete.svg" alt=""></button>               
+                <div class="take-title">Вы уверены?</div>                
+                <div class="reject-conf-buttons">
+                  <button class="take-yes">Да</button>
+                  <button class="take-no">Нет</button>
+                </div>
+              </div>
+            </div>       
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function showHide() {
+      let conf = this.nextElementSibling;
+      if (conf.style.maxHeight) {
+        conf.style.maxHeight = null;
+      } else {
+        conf.style.maxHeight = conf.scrollHeight**2 + 'px';    
+      }
+    }
+
+   
+    function showHide2() {
+      let conf = this.nextElementSibling;
+      if (conf.style.maxHeight) {
+        conf.style.maxHeight = null;
+      } else {
+        conf.style.maxHeight = 0;    
+      }
+    }
+     
+    function hideReject() {
+      let hideReject = document.getElementsByClassName('reject-conf');
+      for (let i = 0; i < hideReject.length; i++) {
+        hideReject[i].style.maxHeight = null;
+
+        reject[0].style.background = null;                 // возвращает цвет, можешь убрать строчку
+      }
+    }
+
+    function hideTake() {
+      let hideTake = document.getElementsByClassName('take-conf');
+      for (let i = 0; i < hideTake.length; i++) {
+        hideTake[i].style.maxHeight = null;
+      }
+    }
+
+    function hideChange() {
+      let hideChange = document.getElementsByClassName('change-conf');
+      for (let i = 0; i < hideChange.length; i++) {
+        hideChange[i].style.maxHeight = null;
+      }
+    }
+
+    function hideReject2() {
+      let hideReject = document.getElementsByClassName('reject-conf');     // Делает кнопку серой
+      for (let i = 0; i < hideReject.length; i++) {
+        hideReject[i].style.maxHeight = null;
+        reject[0].style.background = "#AEB8BC";
+      }
+    }
+
+    let coll = document.getElementsByClassName('show');
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener('click', showHide);
+    }
+
+    let collOpened = document.getElementsByClassName('show-opened');
+    for (let i = 0; i < collOpened.length; i++) {
+      collOpened[i].addEventListener('click', showHide2);
+    }
+
+    let accept = document.getElementsByClassName('submit-take');
+    for (let i = 0; i < accept.length; i++) {
+      accept[i].addEventListener('click', showHide);
+    }
+
+    let change = document.getElementsByClassName('submit-change');
+    for (let i = 0; i < accept.length; i++) {
+      change[i].addEventListener('click', showHide);
+    }
+
+    let reject = document.getElementsByClassName('submit-reject');
+    for (let i = 0; i < reject.length; i++) {
+      reject[i].addEventListener('click', showHide);
+    }
+
+    let clickAccept = document.getElementsByClassName('take-accept');
+    for (let i = 0; i < clickAccept.length; i++) {
+      clickAccept[0].addEventListener('click', hideTake);
+      clickAccept[1].addEventListener('click', hideChange);
+    }
+
+    let clickCancel = document.getElementsByClassName('take-cancel');
+    for (let i = 0; i < clickCancel.length; i++) {
+      clickCancel[0].addEventListener('click', hideTake);
+      clickCancel[1].addEventListener('click', hideChange);
+    }
+
+    let clickClose = document.getElementsByClassName('take-close');
+    for (let i = 0; i < clickClose.length; i++) {
+      clickClose[0].addEventListener('click', hideTake);
+      clickClose[1].addEventListener('click', hideChange);
+      clickClose[2].addEventListener('click', hideReject);
+    }
+
+    let clickYes = document.getElementsByClassName('take-yes');
+    for (let i = 0; i < clickYes.length; i++) {
+      clickYes[i].addEventListener('click', hideReject2);
+    }
+    
+    let clickNo = document.getElementsByClassName('take-no');
+    for (let i = 0; i < clickNo.length; i++) {
+      clickNo[i].addEventListener('click', hideReject);
+    }
+  </script>
+
+
+</body>

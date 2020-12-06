@@ -1,0 +1,40 @@
+@import "../fonts/helvetica_neue_cyr.css";
+
+header {
+  font-family: helvetica;
+  width: auto;
+  display: flex;
+
+  .left-block {
+    display: flex;
+    position: absolute;
+    left: 48px;
+    
+    .brand {
+      width: 256px;
+      margin-top: 8px;
+      a {
+        color:  #FAFAFA;
+      }
+      
+    }
+  
+    .search-input {
+      position: relative;
+      left: 0;
+      outline: none;
+      width: 460px;
+    }
+  }
+
+  .user-actions {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 50px;
+    
+    .svg-user {
+      padding-left: 1em;
+    }
+  }
+}

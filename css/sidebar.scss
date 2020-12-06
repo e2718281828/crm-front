@@ -1,0 +1,80 @@
+
+.sidebar {
+
+  width: 255px;
+  flex-direction: column;
+
+  .title {
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #466DA6;
+  }
+    
+  .status-nav {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    .status-links {
+      display: flex;
+      text-decoration: none;
+
+      .status {
+        width: 32px;
+        height: 32px;
+      }
+
+      .status-img {
+        width: 16px;
+        height: 16px; 
+        margin: 8px;
+      }
+
+      .status-is-rated-active {
+        background-color: #DA867B;
+        border-radius: 50%;
+        
+        .status-tick {
+          background: url(../img/onАssessment1.svg) no-repeat;
+          background-size: 16px;
+          
+        }
+      }
+
+      .status-in-progress-active {
+        background-color: #DA867B;
+        border-radius: 50%;
+        
+        .status-clock {
+          background: url(../img/clock1.svg) no-repeat;
+          background-size: 16px;
+        }
+      }
+
+      .status-is-rated {  
+        .status-tick {
+          background: url(../img/onАssessment2.svg) no-repeat;
+          background-size: 16px;
+          
+        }
+      }
+
+      .status-in-progress {
+        .status-clock {
+          background: url(../img/clock2.svg) no-repeat;
+          background-size: 16px;
+        }
+      }
+      
+
+      .status-text {
+        padding-top: 8px;
+        margin-left: 10px;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        color: #466DA6;
+        text-decoration: none;
+      }
+    }
+  } 
+}

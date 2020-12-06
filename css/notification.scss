@@ -1,0 +1,142 @@
+@import "../fonts/helvetica_neue_cyr.css";
+
+body{
+  background-color: #FAFAFA;
+  font-family: helvetica;
+  color: #466DA6;
+
+  @import "./header.scss";
+}
+
+a, a:visited {
+  color: #466DA6;
+}
+
+#container {
+  width: 1300px;
+  margin: 50px;
+}
+
+main {
+  display: flex;
+  
+  @import "./sidebar.scss";
+
+  .content {
+    
+    .header {
+      font-size: 22px;
+      display: flex;
+      
+      .title-container {
+        .title {
+          margin-bottom: 50px;
+          font-weight: 550;
+        }
+  
+        .new {
+          margin-bottom: 50px;
+          display: flex;
+          align-items: center;
+  
+          img {
+            margin-left: 5px;
+          }
+        }
+  
+        ul {
+          list-style: none;
+          margin-bottom: 50px;
+        }
+  
+        li {
+          margin-right: 50px;
+          display: inline;
+        }
+  
+        .active {
+          color: #DA867B;
+        }
+      }
+      .number-of-notificatoin {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        width: 290px;
+        height: 40px;
+        padding: 15px;
+        display: flex;
+        
+        margin-left: 250px;
+        .number {
+          display: inline-block;
+          font-size: 16px;
+          line-height: 150%;
+          color: #596C77;
+          margin-left: 1em;
+          margin-top: 8px;
+        }
+        .not {
+          display: inline-block;
+          font-size: 16px;
+          line-height: 150%;
+          margin-left: 5px;
+          margin-top: 8px;
+        }
+      }
+     
+    }
+
+    .notification {
+      display: flex;
+      padding: 40px;
+      background: #FFFFFF;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      margin-bottom: 30px;
+      width: 92%;
+      .comment-container {
+        margin-left: 1em;
+        .comment {
+          font-weight: 550;
+          font-size: 20px;
+          line-height: 170%;
+          letter-spacing: 0.5px;
+          color: #596C77;
+        }
+        .app {
+          font-weight: 550;
+          font-size: 20px;
+          line-height: 170%;
+          letter-spacing: 0.5px;
+          color: #466DA6;
+        }
+        .date {
+          font-weight: 550;
+          font-size: 14px;
+          line-height: 142%;
+          color: #AEB8BC;
+        }
+      }
+    }
+  }
+}
+
+#pagination {
+  margin-top: 50px;
+  list-style: none;
+  ul {
+    li {
+      display: inline;
+      font-size: 20px;
+      margin-left: 4px;
+    }
+    .active {
+      padding: 10px;
+      background-color: #60BC87;
+      color: #fff;
+      border-radius: 4px;
+    }
+  }
+
+}

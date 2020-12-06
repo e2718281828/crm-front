@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../css/notification.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+  <header>
+    <div class="left-block">
+      <div class="brand">
+        <a href="../html/list-of-apps.html">Dynamics 365</a>
+      </div>
+
+      <div class="search-bar">
+        <img src="../img/search.svg" />
+        <input type="text" class="search-input" placeholder="Для поиска по номеру заявки начинайте с символа #">
+      </div>
+    </div>
+
+    <div class="user-actions">
+      <a href="./notifications.html" class="notification">
+        <img src="../img/bell.svg" id="svg-notification">
+      </a>
+
+      <a href="./logIn.html" class="logout">
+        <img src="../img/exit.svg" id="svg-logout">
+      </a>
+
+      <a href="./personal-page.html" class="user">
+        <span class="username">Имя Пользователя</span>
+        <img src="../img/user.svg" class="svg-user">
+      </a>
+    </div>
+  </header>
+
+  <div id="container">
+
+    <main>
+      <div class="sidebar">
+        <div class="title">
+          Заявки
+        </div>
+
+        <div>
+          <!-- <ul class="">
+            <a href="#">
+              <li><img src="../img/onАssessment1.svg" alt=""><span>123</span></li>
+            </a>
+            <a href="#">
+              <li><img src="../img/clock2.svg" alt=""><span>1234</span></li>
+            </a>
+          </ul> -->
+          <div class="status-nav">
+            <a class="status-links" href="../html/list-of-apps.html">
+              <div class="status status-is-rated">
+                <div class="status-img status-tick"></div>
+              </div>
+              <span class="status-text">На оценке</span>
+            </a>
+          </div>
+
+          <div class="status-nav">
+            <a class="status-links" href="../html/in-work.html">
+              <div class="status status-in-progress">
+                <div class="status-img status-clock"></div>
+              </div>
+              <span class="status-text">В работе</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="header">
+          <div class="title-container">
+            <div class="title">Уведомления</div>
+            <ul class="status-links">
+              <li><a href="#" class="active">Все</a></li>
+              <li><a href="#" class="">Комментарии</a></li>
+              <li><a href="#" class="">Оценки</a></li>
+            </ul>
+          </div>
+          
+          <div class="number-of-notificatoin">
+            <img src="../img/bell-blue.svg" alt="">
+            <span class="number">У вас 52 новых</span>
+            <span class="not">уведомлений (-я)</span>
+          </div>
+        </div>
+
+        <article class="notification">
+          <img src="../img/chat.svg" alt="">
+          <div class="comment-container">  
+            <div>
+              <span class="comment">Новый комментарий</span>
+              <span class="app">в заявке #51</span>
+            </div>
+            <div class="date">
+              31 октября, 14:14
+            </div>
+          </div>
+        </article>
+
+        <article class="notification">
+          <img src="../img/money.svg" alt="">
+          <div class="comment-container">  
+            <div>
+              <span class="comment">Клиент согласился, требуется подтверждение</span>
+              <span class="app">в заявке #51</span>
+            </div>
+            <div class="date">
+              31 октября, 14:14
+            </div>
+          </div>
+        </article>
+
+        <article class="notification">
+          <img src="../img/money.svg" alt="">
+          <div class="comment-container">  
+            <div>
+              <span class="comment">Новая оценка</span>
+              <span class="app">в заявке #51</span>
+            </div>
+            <div class="date">
+              31 октября, 14:14
+            </div>
+          </div>
+        </article>
+
+        <div id="pagination">
+          <ul>
+            <li class="item">
+              <img src="../img/arrowLgray.svg" alt="">
+            </li>
+            <li class="item">
+              <a class="item active" href="#">1</a>
+            </li>
+            <li class="item">
+              <a class="item" href="#">2</a>
+            </li>
+            <li class="item">
+              <a class="item" href="#">3</a>
+            </li>
+            <li class="item">
+              <a class="item" href="#">...</a>
+            </li>
+            <li class="item">
+              <a class="item" href="#">24</a></span>
+            <li class="item">
+              <a class="item arrow" href="#">
+                <img src="../img/arrowRgreen.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+
+
+  </div>
+
+  <footer>
+
+  </footer>
+
+
+
+
+</body>
