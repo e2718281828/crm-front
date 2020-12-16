@@ -47,6 +47,21 @@ main {
         }
       }
 
+      .new-app-container {
+        width: 620px;
+        max-height: 1723px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 999;
+        background-color: white;
+        border: 1px solid #CED7DF;
+        border-radius: 4px;
+        .new-app {
+          margin: 45px;
+        }
+      }
+
       ul {
         list-style: none;
         margin-bottom: 50px;
@@ -116,6 +131,7 @@ main {
         background: #b9bfc5;
       }
       .list {
+        z-index: 10;
         margin-top: 20px;
         position: absolute;
         max-height: 0;
@@ -207,6 +223,7 @@ main {
         font-size: 20px;
         margin-bottom: 10px;
         letter-spacing: 0.5px;
+        
         color: #466DA6;
         font-weight: 550;
         font-size: 20px;
@@ -236,22 +253,26 @@ main {
         color: #596C77;
         margin-bottom: 30px;
         width: 100%;
+        
         div {
           margin-top: 1em;
           margin-bottom: 1em;
           margin-right: 2em;
           white-space: nowrap;
-          span {
-            font-weight: 550;
-            font-size: 16px;
-            line-height: 150%;
-          }
+          
+        }
+        span {
+          font-weight: 550;
+          font-size: 16px;
+          line-height: 150%;
+          white-space: pre;
         }
       }
       
 
       .actions {
         display: flex; 
+        position: relative;
 
         .submit-reject, .submit-delete, .submit-give {
           outline: none;                   
@@ -296,6 +317,89 @@ main {
             background: #da7b7bb4;
           }
         }
+
+        .take-sure {
+          font-weight: 550;
+          letter-spacing: 0.5px;
+          line-height: 150%;
+        }
+        .take-close {
+          border: none;
+          background: none;
+          position: relative;
+          
+          top: -15px;
+          outline: none;
+          cursor: pointer;          
+        }
+        .take-yes {
+          margin-right: 30px;
+          width: 90px;
+          height: 40px;
+          background: #60BC87;
+          border-radius: 4px;
+          border: none;
+          color: white;
+          font-weight: 550;
+          font-size: 16px;
+          line-height: 16px;  
+          outline: none;   
+          cursor: pointer;    
+
+          &:hover {
+            background: #60bc86d7;
+          }
+          &:active { 
+            background: #60bc86b4;
+          }
+        }
+        .take-no {
+          margin-right: 30px;
+          width: 90px;
+          height: 40px;
+          background: #DA7B7B;
+          border-radius: 4px;
+          border: none;
+          color: white;
+          font-weight: 550;
+          font-size: 16px;
+          line-height: 16px;  
+          outline: none;    
+          cursor: pointer;  
+
+          &:hover {
+            background: #da7b7bd5;
+          }
+          &:active { 
+            background: #da7b7bb4;
+          }
+        }
+        
+        
+
+        .warning-container {
+          z-index: 5;
+          max-height: 0px;
+          overflow: hidden;
+          position: absolute;
+          left: 230px;
+          top: -180px;
+          transition: 0.05s ease-out;
+          background: #FCFDFE;
+          border-radius: 4px;
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+          .warning {
+            padding: 15px;
+            div {
+              margin: 10px 10px 20px 10px;
+              
+            }
+            .take-close {
+              left: 90px;
+            }
+          }
+        }
+
         
         .reject-conf-container {
           max-height: 0px;
@@ -312,67 +416,11 @@ main {
             padding: 15px;
             div {
               margin: 10px 10px 20px 10px;
-              .take-sure {
-                font-weight: 550;
-                letter-spacing: 0.5px;
-              }
-              .take-close {
-                border: none;
-                background: none;
-                position: relative;
-                left: 127px;
-                top: -15px;
-                outline: none;
-                cursor: pointer;
-                
-              }
-              .take-text {
-                font-size: 14px;
-                line-height: 150%;
-                color: #596C77;
-              }
-              .take-yes {
-                margin-right: 30px;
-                width: 90px;
-                height: 40px;
-                background: #60BC87;
-                border-radius: 4px;
-                border: none;
-                color: white;
-                font-weight: 550;
-                font-size: 16px;
-                line-height: 16px;  
-                outline: none;   
-                cursor: pointer;    
-      
-                &:hover {
-                  background: #60bc86d7;
-                }
-                &:active { 
-                  background: #60bc86b4;
-                }
-              }
-              .take-no {
-                margin-right: 30px;
-                width: 90px;
-                height: 40px;
-                background: #DA7B7B;
-                border-radius: 4px;
-                border: none;
-                color: white;
-                font-weight: 550;
-                font-size: 16px;
-                line-height: 16px;  
-                outline: none;    
-                cursor: pointer;  
-      
-                &:hover {
-                  background: #da7b7bd5;
-                }
-                &:active { 
-                  background: #da7b7bb4;
-                }
-              }
+            
+            }
+            
+            .take-close {
+              left: 125px;
             }
           }
         }   

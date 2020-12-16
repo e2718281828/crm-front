@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="../css/list-of-apps.css">
-  
+
   <link rel="stylesheet" href="../css/common.css">
 </head>
 
@@ -77,7 +77,85 @@
 
       <div class="content">
         <div class="header">
-          <!-- <div class="new">Новая<img src="../img/add.svg"></div> -->
+          <div class="new">Новая<img src="../img/add.svg"></div>
+          <div class="new-app-container">
+            <div class="new-app">
+              <div class="title">Новая заявка</div>
+              <div class="subtitle">Заявка будет отправлена на оценку</div>
+              <div>
+                <div>Имя</div>
+                <input type="text" name="" id="">
+              </div>
+              <div>
+                <div>Телефон для звонков</div>
+                <input type="number" name="" id="">
+              </div>
+              <div>
+                <div>WhatsApp</div>
+                <input type="number" name="" id="">
+              </div>
+              <div>
+                <div>E-mail</div>
+                <input type="text" name="" id="">
+              </div>
+              <div>
+                <div>Тип работы</div>
+                <select name="select2">
+                  <option selected="selected">Выберите тип работы</option>
+                  <option>Первый тип работ</option>
+                  <option>Второй тип работ</option>
+                  <option>Третий тип работ</option>
+                  <option>Четвертый тип работ</option>
+                </select>
+              </div>
+              <div>
+                <div>Основная идея</div>
+                <input type="text" name="" id="">
+              </div>
+              <div>
+                <div>Название</div>
+                <input type="text" name="" id="">
+              </div>
+              <div>
+                <div>
+                  Исходные данные и требования
+                </div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+              <div>
+                <label>
+                  <input type="file">
+                  <img src="../img/pin.svg">
+                  <span>Прикрепить файл</span>
+                </label>
+              </div>
+              <div>
+                <div class="attached-file">
+                  <div class="img"><img src="../img/pin.svg"></div>
+                  <a class="download" type="download">Ссылка</a>
+                </div>
+                <div>
+                  <input class="file-comment" type="text" placeholder="Введите коментарий к файлу">
+                </div>
+              </div>
+              <div>
+                <div class="attached-file">
+                  <div class="img"><img src="../img/pin.svg"></div>
+                  <a class="download" type="download">Ссылка</a>
+                </div>
+                <div>
+                  <input class="file-comment" type="text" placeholder="Введите коментарий к файлу">
+                </div>
+              </div>
+              <div>
+                <div>Желаемый срок</div>
+                <input type="date" name="" id="">
+              </div>
+              <div>
+                <button>Создать</button>
+              </div>
+            </div>
+          </div>
           <div class="title">Список заявок</div>
           <ul class="status-links">
             <li><a href="#" class="active">Новые</a></li>
@@ -88,11 +166,11 @@
 
         <div class="filter">
           <div class="filter-buttons">
-            <a id="confirm" >
+            <a id="confirm">
               <img class="confirm-img" src="../img/confirm.svg" alt="">
               Подтвердить
             </a>
-            <a id="discard" href="../html/list-of-apps.html">
+            <a id="discard" href="#">
               <img class="discard-img" src="../img/delete.svg" alt="">
               Сбросить
             </a>
@@ -108,70 +186,70 @@
               <label>
                 <li>
                   <div>Первый тип работ</div>
-                  <input class="checkbox" type="checkbox" value="1" id=""  >
+                  <input class="checkbox" type="checkbox" value="1" id="">
                   <div class="fake-checkbox"></div>
                 </li>
               </label>
               <label>
                 <li>
                   <div>Второй тип работ</div>
-                  <input class="checkbox" type="checkbox" value="2" id="" >
+                  <input class="checkbox" type="checkbox" value="2" id="">
                   <div class="fake-checkbox"></div>
                 </li>
               </label>
               <label>
                 <li>
                   <div>Третий тип работ</div>
-                  <input class="checkbox" type="checkbox" value="3" id="" >
+                  <input class="checkbox" type="checkbox" value="3" id="">
                   <div class="fake-checkbox"></div>
                 </li>
-              </label> 
+              </label>
               <label>
                 <li>
                   <div>Четвертый тип работ</div>
-                  <input class="checkbox" type="checkbox" value="4" id=""  >
+                  <input class="checkbox" type="checkbox" value="4" id="">
                   <div class="fake-checkbox"></div>
                 </li>
               </label>
               <label>
                 <li>
                   <div>Пятый тип работ</div>
-                  <input class="checkbox" type="checkbox" value="5" id="" >
+                  <input class="checkbox" type="checkbox" value="5" id="">
                   <div class="fake-checkbox"></div>
                 </li>
               </label>
               <label>
                 <li>
                   <div>Шестой тип работ</div>
-                  <input class="checkbox" type="checkbox" value="6" id="" >
+                  <input class="checkbox" type="checkbox" value="6" id="">
                   <div class="fake-checkbox"></div>
                 </li>
               </label>
               <label>
                 <li>
                   <div>Седьмой тип работ</div>
-                  <input class="checkbox" type="checkbox" value="7" id=""  >
+                  <input class="checkbox" type="checkbox" value="7" id="">
                   <div class="fake-checkbox"></div>
                 </li>
               </label>
               <label>
                 <li>
                   <div>Восьмой тип работ</div>
-                  <input class="checkbox" type="checkbox" value="8" id="" >
+                  <input class="checkbox" type="checkbox" value="8" id="">
                   <div class="fake-checkbox"></div>
                 </li>
               </label>
               <label>
                 <li>
                   <div>Девятый тип работ</div>
-                  <input class="checkbox" type="checkbox" value="9" id="" >
+                  <input class="checkbox" type="checkbox" value="9" id="">
                   <div class="fake-checkbox"></div>
                 </li>
               </label>
             </ul>
-            
+
           </div>
-          
+
         </div>
 
         <article class="app">
@@ -182,7 +260,7 @@
           </div>
           <div class="text">
             <div>
-             <span>Срок выполнения:</span> 01.01.2020
+              <span>Срок выполнения:</span> 01.01.2020
             </div>
             <div>
               <span>Рекомендуемая цена:</span> 2000р
@@ -190,27 +268,27 @@
             <div>
               <span>Минимальная цена:</span> 1500р
             </div>
-            
+
           </div>
           <div class="actions">
-        
-            <span class="btn btn-gray">Отдать в работу</span> 
-          
-            <button class="submit-delete">Удалить заявку</button>    
 
-            <div class="reject-conf-container"> 
+            <span class="btn btn-gray">Отдать в работу</span>
+
+            <button class="submit-delete">Удалить заявку</button>
+
+            <div class="reject-conf-container">
               <div class="reject-conf">
                 <div>
-                  <span class="take-sure">Вы уверены?</span> 
+                  <span class="take-sure">Вы уверены?</span>
                   <button class="take-close"><img src="../img/delete.svg" alt=""></button>
                 </div>
-                
+
                 <div>
                   <button class="take-yes">Да</button>
                   <button class="take-no">Нет</button>
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </article>
         <article class="app">
@@ -221,7 +299,7 @@
           </div>
           <div class="text">
             <div>
-             <span>Срок выполнения:</span> 01.01.2020
+              <span>Срок выполнения:</span> 01.01.2020
             </div>
             <div>
               <span>Рекомендуемая цена:</span> 2000р
@@ -229,34 +307,54 @@
             <div>
               <span>Минимальная цена:</span> 1500р
             </div>
-            
+
           </div>
           <div class="actions">
 
-            
+
 
             <button class="submit-give">Отдать в работу</button>
-
-            <button class="submit-delete">Удалить заявку</button>    
-
-            <div class="reject-conf-container"> 
-              <div class="reject-conf">
+            <div class="warning-container">
+              <div class="warning">
                 <div>
-                  <span class="take-sure">Вы уверены?</span> 
+                  <span class="take-sure">Клиент внес предоплату?</span>
                   <button class="take-close"><img src="../img/delete.svg" alt=""></button>
                 </div>
-                
+                <div class="text">
+                  Перед тем, как отправить заявку в работу, <br>
+                  убедитесь, что клиент внес предоплату.
+                </div>
+                <div class="text">
+                  <span>Необходимая сумма: </span> 300р
+                </div>
                 <div>
                   <button class="take-yes">Да</button>
                   <button class="take-no">Нет</button>
                 </div>
               </div>
-            </div>  
+
+            </div>
+
+            <button class="submit-delete">Удалить заявку</button>
+
+            <div class="reject-conf-container">
+              <div class="reject-conf">
+                <div>
+                  <span class="take-sure">Вы уверены?</span>
+                  <button class="take-close"><img src="../img/delete.svg" alt=""></button>
+                </div>
+
+                <div>
+                  <button class="take-yes">Да</button>
+                  <button class="take-no">Нет</button>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
-        
 
-       
+
+
 
         <div id="pagination">
           <ul>
@@ -306,17 +404,32 @@
       }
     }
 
-    function hideReject() {
+    function hide() {
       let hideReject = document.getElementsByClassName('reject-conf-container');
+      let hideWarning = document.getElementsByClassName('warning-container');
       for (let i = 0; i < hideReject.length; i++) {
         hideReject[i].style.maxHeight = null;
+        hideWarning[i].style.maxHeight = null;
+
       }
     }
-    
+
+    // function hideWarning() {
+    //   let hideWarning = document.getElementsByClassName('warning-container');
+    //   for (let i = 0; i < hideWarning.length; i++) {
+    //     hideWarning[i].style.maxHeight = null;
+    //   }
+    // }
+
 
     let coll = document.getElementsByClassName('open-filter');
     for (let i = 0; i < coll.length; i++) {
       coll[i].addEventListener('click', showHide);
+    };
+
+    let subGive = document.getElementsByClassName('submit-give');
+    for (let i = 0; i < subGive.length; i++) {
+      subGive[i].addEventListener('click', showHide);
     };
 
     let sub = document.getElementsByClassName('submit-delete');
@@ -326,35 +439,35 @@
 
     let clickClose = document.getElementsByClassName('take-close');
     for (let i = 0; i < clickClose.length; i++) {
-      clickClose[i].addEventListener('click', hideReject)
+      clickClose[i].addEventListener('click', hide)
     };
 
     let clickYes = document.getElementsByClassName('take-yes');
     for (let i = 0; i < clickYes.length; i++) {
-      clickYes[i].addEventListener('click', hideReject)
+      clickYes[i].addEventListener('click', hide)
     };
-    
+
     let clickNo = document.getElementsByClassName('take-no');
     for (let i = 0; i < clickNo.length; i++) {
-      clickNo[i].addEventListener('click', hideReject)
+      clickNo[i].addEventListener('click', hide)
     };
 
     let confirm = document.getElementById('confirm')
-    confirm.addEventListener('click', function() {
+    confirm.addEventListener('click', function () {
       let checkbox = document.getElementsByClassName('checkbox');
-      let work_types = []; 
+      let work_types = [];
       for (let i = 0; i < checkbox.length; i++) {
         if (checkbox[i].checked) {
           work_types.push(checkbox[i].value);
         };
       };
-      const params = new URLSearchParams({work_types});
+      const params = new URLSearchParams({ work_types });
       let url = './list-of-apps.html/?' + params.toString()
       location.href = url;
     });
-   
 
-    
+
+
 
 
   </script>
