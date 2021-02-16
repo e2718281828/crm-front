@@ -17,7 +17,9 @@ a, a:visited {
   margin: 50px;
 }
 
-
+input, textarea {
+  outline: none;
+}
 
 main {
   display: flex;
@@ -49,16 +51,153 @@ main {
 
       .new-app-container {
         width: 620px;
-        max-height: 1723px;
+        
         position: absolute;
+        top: 200px;
         left: 50%;
         transform: translate(-50%, 0);
         z-index: 999;
         background-color: white;
-        border: 1px solid #CED7DF;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         .new-app {
-          margin: 45px;
+          margin: 45px 150px;
+         
+          .new-title {
+            font-size: 22px;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: #466DA6;
+            font-weight: 550;
+            font-size: 20px;
+            line-height: 16px;
+          }
+          .new-subtitle {
+            margin-bottom: 30px;
+            font-size: 14px;
+            line-height: 150%;
+            color: #596C77;
+            text-align: center;
+          }
+          .new-text {
+            font-size: 16px;
+            line-height: 150%;
+            color: #596C77;
+            margin-bottom: 10px;
+          }
+          input { 
+            margin-bottom: 1em;
+            width: 320px;
+            height: 40px;
+            background: #FCFDFE;
+            border: 1px solid #E4E4E4;
+            border-radius: 4px;
+            color: #596C77;
+            font-size: 14px;
+            line-height: 150%;
+            padding-left: 14px;
+            &::placeholder {
+              
+              font-size: 14px;
+              line-height: 150%;
+              color: #AEB8BC;
+            }
+          }
+          textarea {
+            font-family: Helvetica;
+            padding: 14px;
+            width: 306px;
+            height: 75px;
+            background: #FCFDFE;
+            border-radius: 4px;
+            text-align: left;
+            border: 1px solid #E4E4E4;
+            resize: none;
+            color: #596C77;
+            font-size: 14px;
+            line-height: 150%;
+            &::placeholder {
+              font-size: 14px;
+              line-height: 150%;
+              color: #AEB8BC;
+            }
+          }
+          .pin {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            img {
+              height: 1em;
+              margin-right: 5px;
+            }
+            .new-text {
+              vertical-align: 15%;
+            }
+          }
+          label {           
+            cursor: pointer;
+            input {
+              display: none;
+            }
+          }
+          .attached-file {
+            cursor: pointer;
+            display: flex;
+            .img {
+              margin-right: 10px;
+              margin-bottom: 10px;
+              border: 1px solid #A2B5D1;
+              box-sizing: border-box;
+              width: 40px;
+              height: 38px;
+              border-radius: 4px;
+              position: relative;
+              }
+              img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                height: 1em;
+              }
+              .img:hover {
+                cursor: pointer;
+                border: 1px solid #A2B5D1;
+                background: url(../img/delete.svg) no-repeat 9px;
+                background-size: 20px; 
+                width: 40px;
+                height: 38px;
+                border-radius: 4px;
+                img {
+                  display: none;
+                }
+            }
+            .new-text {
+              margin-top: 7px;
+            }
+            
+            }
+          }
+          .new-create {
+            margin-top: 1em;
+            width: 335px;
+            background: #60BC87;
+            outline: none;                   
+            height: 50px;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            font-weight: 550;
+            font-size: 16px;
+            line-height: 16px;
+            cursor: pointer;     
+            &:hover {
+              background: #60bc86d7;
+            }
+            &:active {
+              background: #60bc86b4;
+            }
+          
         }
       }
 

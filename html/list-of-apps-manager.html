@@ -80,26 +80,26 @@
           <div class="new">Новая<img src="../img/add.svg"></div>
           <div class="new-app-container">
             <div class="new-app">
-              <div class="title">Новая заявка</div>
-              <div class="subtitle">Заявка будет отправлена на оценку</div>
+              <div class="new-title">Новая заявка</div>
+              <div class="new-subtitle">Заявка будет отправлена на оценку</div>
               <div>
-                <div>Имя</div>
-                <input type="text" name="" id="">
+                <div class="new-text">Имя</div>
+                <input type="text" name="" id="" placeholder="Введите имя">
               </div>
               <div>
-                <div>Телефон для звонков</div>
-                <input type="number" name="" id="">
+                <div class="new-text">Телефон для звонков</div>
+                <input type="text" name="" id="" placeholder="+7 999 888 77 66">
               </div>
               <div>
-                <div>WhatsApp</div>
-                <input type="number" name="" id="">
+                <div class="new-text">WhatsApp</div>
+                <input type="text" name="" id="" placeholder="+7 999 888 77 66">
               </div>
               <div>
-                <div>E-mail</div>
-                <input type="text" name="" id="">
+                <div class="new-text">E-mail</div>
+                <input type="text" name="" id="" placeholder="name@info.com">
               </div>
               <div>
-                <div>Тип работы</div>
+                <div class="new-text">Тип работы</div>
                 <select name="select2">
                   <option selected="selected">Выберите тип работы</option>
                   <option>Первый тип работ</option>
@@ -109,30 +109,30 @@
                 </select>
               </div>
               <div>
-                <div>Основная идея</div>
-                <input type="text" name="" id="">
+                <div class="new-text">Основная идея</div>
+                <input type="text" name="" id="" placeholder="Введите текст">
               </div>
               <div>
-                <div>Название</div>
-                <input type="text" name="" id="">
+                <div class="new-text">Название</div>
+                <input type="text" name="" id="" placeholder="Введите название">
               </div>
               <div>
-                <div>
+                <div class="new-text">
                   Исходные данные и требования
                 </div>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
               </div>
-              <div>
+              <div class="pin">
                 <label>
                   <input type="file">
                   <img src="../img/pin.svg">
-                  <span>Прикрепить файл</span>
+                  <span class="new-text">Прикрепить файл</span>
                 </label>
               </div>
               <div>
                 <div class="attached-file">
                   <div class="img"><img src="../img/pin.svg"></div>
-                  <a class="download" type="download">Ссылка</a>
+                  <a class="new-text" type="download">Ссылка</a>
                 </div>
                 <div>
                   <input class="file-comment" type="text" placeholder="Введите коментарий к файлу">
@@ -141,18 +141,18 @@
               <div>
                 <div class="attached-file">
                   <div class="img"><img src="../img/pin.svg"></div>
-                  <a class="download" type="download">Ссылка</a>
+                  <a class="new-text" type="download">Ссылка</a>
                 </div>
                 <div>
                   <input class="file-comment" type="text" placeholder="Введите коментарий к файлу">
                 </div>
               </div>
               <div>
-                <div>Желаемый срок</div>
+                <div class="new-text">Желаемый срок</div>
                 <input type="date" name="" id="">
               </div>
               <div>
-                <button>Создать</button>
+                <button class="new-create">Создать</button>
               </div>
             </div>
           </div>
@@ -273,6 +273,189 @@
           <div class="actions">
 
             <span class="btn btn-gray">Отдать в работу</span>
+
+            <button class="submit-delete">Удалить заявку</button>
+
+            <div class="reject-conf-container">
+              <div class="reject-conf">
+                <div>
+                  <span class="take-sure">Вы уверены?</span>
+                  <button class="take-close"><img src="../img/delete.svg" alt=""></button>
+                </div>
+
+                <div>
+                  <button class="take-yes">Да</button>
+                  <button class="take-no">Нет</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">Игорь, +7 999-888-77-66</div>
+          <div class="info">
+            <span class="id">#4</span>
+            <span class="datetime">31 октября, 14:14</span>
+          </div>
+          <div class="text">
+            <div>
+              <span>Срок выполнения:</span> 01.01.2020
+            </div>
+            <div>
+              <span>Рекомендуемая цена:</span> 2000р
+            </div>
+            <div>
+              <span>Минимальная цена:</span> 1500р
+            </div>
+
+          </div>
+          <div class="actions">
+
+
+
+            <button class="submit-give">Отдать в работу</button>
+            <div class="warning-container">
+              <div class="warning">
+                <div>
+                  <span class="take-sure">Клиент внес предоплату?</span>
+                  <button class="take-close"><img src="../img/delete.svg" alt=""></button>
+                </div>
+                <div class="text">
+                  Перед тем, как отправить заявку в работу, <br>
+                  убедитесь, что клиент внес предоплату.
+                </div>
+                <div class="text">
+                  <span>Необходимая сумма: </span> 300р
+                </div>
+                <div>
+                  <button class="take-yes">Да</button>
+                  <button class="take-no">Нет</button>
+                </div>
+              </div>
+
+            </div>
+
+            <button class="submit-delete">Удалить заявку</button>
+
+            <div class="reject-conf-container">
+              <div class="reject-conf">
+                <div>
+                  <span class="take-sure">Вы уверены?</span>
+                  <button class="take-close"><img src="../img/delete.svg" alt=""></button>
+                </div>
+
+                <div>
+                  <button class="take-yes">Да</button>
+                  <button class="take-no">Нет</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">Игорь, +7 999-888-77-66</div>
+          <div class="info">
+            <span class="id">#4</span>
+            <span class="datetime">31 октября, 14:14</span>
+          </div>
+          <div class="text">
+            <div>
+              <span>Срок выполнения:</span> 01.01.2020
+            </div>
+            <div>
+              <span>Рекомендуемая цена:</span> 2000р
+            </div>
+            <div>
+              <span>Минимальная цена:</span> 1500р
+            </div>
+
+          </div>
+          <div class="actions">
+
+
+
+            <button class="submit-give">Отдать в работу</button>
+            <div class="warning-container">
+              <div class="warning">
+                <div>
+                  <span class="take-sure">Клиент внес предоплату?</span>
+                  <button class="take-close"><img src="../img/delete.svg" alt=""></button>
+                </div>
+                <div class="text">
+                  Перед тем, как отправить заявку в работу, <br>
+                  убедитесь, что клиент внес предоплату.
+                </div>
+                <div class="text">
+                  <span>Необходимая сумма: </span> 300р
+                </div>
+                <div>
+                  <button class="take-yes">Да</button>
+                  <button class="take-no">Нет</button>
+                </div>
+              </div>
+
+            </div>
+
+            <button class="submit-delete">Удалить заявку</button>
+
+            <div class="reject-conf-container">
+              <div class="reject-conf">
+                <div>
+                  <span class="take-sure">Вы уверены?</span>
+                  <button class="take-close"><img src="../img/delete.svg" alt=""></button>
+                </div>
+
+                <div>
+                  <button class="take-yes">Да</button>
+                  <button class="take-no">Нет</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">Игорь, +7 999-888-77-66</div>
+          <div class="info">
+            <span class="id">#4</span>
+            <span class="datetime">31 октября, 14:14</span>
+          </div>
+          <div class="text">
+            <div>
+              <span>Срок выполнения:</span> 01.01.2020
+            </div>
+            <div>
+              <span>Рекомендуемая цена:</span> 2000р
+            </div>
+            <div>
+              <span>Минимальная цена:</span> 1500р
+            </div>
+
+          </div>
+          <div class="actions">
+
+
+
+            <button class="submit-give">Отдать в работу</button>
+            <div class="warning-container">
+              <div class="warning">
+                <div>
+                  <span class="take-sure">Клиент внес предоплату?</span>
+                  <button class="take-close"><img src="../img/delete.svg" alt=""></button>
+                </div>
+                <div class="text">
+                  Перед тем, как отправить заявку в работу, <br>
+                  убедитесь, что клиент внес предоплату.
+                </div>
+                <div class="text">
+                  <span>Необходимая сумма: </span> 300р
+                </div>
+                <div>
+                  <button class="take-yes">Да</button>
+                  <button class="take-no">Нет</button>
+                </div>
+              </div>
+
+            </div>
 
             <button class="submit-delete">Удалить заявку</button>
 
